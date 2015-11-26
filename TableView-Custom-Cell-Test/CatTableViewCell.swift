@@ -18,7 +18,11 @@ import UIKit
 protocol CatCellDelegate: class {
     func didChangeLike(sender: CatTableViewCell, like: Bool)
     func messageFromCatCell(sender: CatTableViewCell)
+    func catSound(sender: CatTableViewCell, says: String)
 }
+
+
+
 
 class CatTableViewCell: UITableViewCell {
     
@@ -36,6 +40,7 @@ class CatTableViewCell: UITableViewCell {
     @IBAction func catMessageButtonTapped(sender: AnyObject) {
         if self.delegate != nil {
             self.delegate?.messageFromCatCell(self)
+            self.delegate?.catSound(self, says: "meow \(catNameLabel.text)")
         }
     }
     

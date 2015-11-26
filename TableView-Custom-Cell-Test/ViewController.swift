@@ -70,6 +70,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print("Message button tapped in row: \(indexPath!.row)")
     }
     
+    func catSound(sender: CatTableViewCell, says: String) {
+        // print(says)
+        if let indexPath = tableView.indexPathForCell(sender) {
+            print("Meow from \(array[indexPath.row].name)")
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +85,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         array.append(Cat(name: "Fluffy", age: 3, imageName: "cat-1"))
         array.append(Cat(name: "Mr. Scruffy", age: 2, imageName: "cat-2"))
         array.append(Cat(name: "Frango", age: 4, imageName: "cat-3"))
-        
+        array.append(Cat(name: "Bo", age: 4, imageName: "cat-4 "))
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,9 +16,16 @@ class Cat {
     var age: Int
     var liked: Bool = false
     
+    // Cat(name: String, age: Int, imageName: String)
     init(name: String, age: Int, imageName: String) {
         self.name = name
         self.age = age
         self.imageName = imageName
+    }
+    
+    init() {
+        self.name = "Kitty"
+        self.age = 1
+        self.imageName = ""
     }
 }

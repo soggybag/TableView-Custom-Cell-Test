@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" red="0.70980392160000005" green="0.59215686270000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.58823529409999997" green="0.57254901960000004" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CatCell" rowHeight="127" id="v8F-Co-IVW" customClass="CatTableViewCell" customModule="TableView_Custom_Cell_Test" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CatCell" rowHeight="127" id="v8F-Co-IVW" customClass="CatTableViewCell" customModule="TableView_Custom_Cell_Test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="127"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v8F-Co-IVW" id="2OD-2a-c6H">
